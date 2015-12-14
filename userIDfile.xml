@@ -1,0 +1,9 @@
+<uid-message>
+  <version>1.0</version>
+  <type>update</type>
+  <payload>
+    <login>
+      <entry name="username" ip="ipaddress" />
+    </login>
+  </payload>
+</uid-message>
