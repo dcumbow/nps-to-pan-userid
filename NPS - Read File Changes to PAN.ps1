@@ -6,9 +6,9 @@ Uncheck the boxes for Authentication Requests and Periodic Authentication Status
 
 
 Put the PS1 and XML file in a folder (C:\scripts\PANuserID, for example) on your NPS server.
-Run this script as a scheduled task that starts running at 12:00:01AM daily.
+Run this script as a scheduled task that starts running at 12:00:05AM daily.
 Call with powershell.exe -NoExit -File "C:\scripts\PANuserID\NPS - Read File Changes to PAN.ps1" (change if needed)
-Set the task to stop running if it runs longer that 1 day (Under Settings when setting up the task).
+Set the task to stop existing instances when a new one starts (Under Settings when setting up the task, very bottom).
 Update the CHANGE ME IF NEEDED info below to match log and script locations as well as your PAN URL and API key.
 
 #>
