@@ -80,7 +80,7 @@ $xml.Save($pathXml)
 #create a web-clietn object, upload XML template file to PAN box
 $wc = New-Object System.Net.WebClient
 # CHANGE ME - PAN URL and API key
-$wc.UploadFile( 'https://10.1.2.243/api/?type=user-id&key=LUFRPT1VYURyVnVtKzk2dCtWajRoVngxTGdLa3ZyRmM9TVlMVHh6VElvR1lQOXE5d25PL3BUZVlON3lvRTdRQWZ4TFRQYkxpNUlOUVlHYzNBaWxhaS95YW5CMnRrS2Z5UTNjYTJ3TFVDQmJHQWpMMUpDeVRZWlE9PQ==',$pathXml)
+$wc.UploadFile( 'https://<IPADDRESS>/api/?type=user-id&key=<API_KEY>',$pathXml)
 
 }
 
@@ -88,3 +88,4 @@ $wc.UploadFile( 'https://10.1.2.243/api/?type=user-id&key=LUFRPT1VYURyVnVtKzk2dC
 # To stop the monitoring, run the following commands:
 # Unregister-Event PAN-UserID-Mapping
 # Remove-Job -Name PAN-UserID-Mapping -Force
+
